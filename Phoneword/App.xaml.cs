@@ -7,13 +7,15 @@ namespace Phoneword
 {
     public partial class App : Application
     {
-        // This has been updated
         public static IList<string> PhoneNumbers { get; set; }
 
         public App()
         {
+            //Initialize the App
             InitializeComponent();
+            // Create the list for storing phone numbers
             PhoneNumbers = new List<string>();
+            // Run the main page which is MainPage.xaml
             MainPage = new NavigationPage(new MainPage());
         }
 
