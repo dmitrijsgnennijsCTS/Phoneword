@@ -7,6 +7,7 @@ namespace Phoneword
 {
     public partial class App : Application
     {
+        // This has been updated
         public static IList<string> PhoneNumbers { get; set; }
 
         public App()

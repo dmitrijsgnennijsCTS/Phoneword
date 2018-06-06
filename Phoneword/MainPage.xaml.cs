@@ -44,7 +44,7 @@ namespace Phoneword
                 }
             }
         }
-            async void OnCallHistory(object sender, EventArgs e)
+        async void OnCallHistory(object sender, EventArgs e)
             {
                 await Navigation.PushAsync(new CallHistoryPage());
             }
