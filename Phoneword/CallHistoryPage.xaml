@@ -6,6 +6,7 @@
                    Title="Call History">
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
+            <!--Set out the spacing between the numbers in the history page-->
             <On Platform="iOS" Value="20, 40, 20, 20" />
             <On Platform="Android, UWP" Value="20" />
         </OnPlatform>

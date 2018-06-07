@@ -10,7 +10,7 @@ namespace Phoneword
 
         public MainPage()
         {
-            
+            // Initialize the mainpage as MainPage
             InitializeComponent();
         }
 
@@ -45,6 +45,7 @@ namespace Phoneword
                     "No"))
             {
                 // Run the code bellow if Yes
+                // DependencyService finds the right platform implementation for dial
                 var dialer = DependencyService.Get<IDialer>();
                 if (dialer != null)
                 {
@@ -57,7 +58,7 @@ namespace Phoneword
                 }
             }
         }
-        //Run this code ehn the Call History button is Enabled
+        //Run this code wehn the Call History button is Enabled
         async void OnCallHistory(object sender, EventArgs e)
             {
             //Create a page when the call history is pressed

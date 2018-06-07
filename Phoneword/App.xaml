@@ -6,6 +6,7 @@
             <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <!--Set the colors of the bg and text-->
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
         </ResourceDictionary>

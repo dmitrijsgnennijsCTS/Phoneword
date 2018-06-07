@@ -25,7 +25,9 @@ namespace Core
 
                 else
                 {
+                    // If not found then use TranslateToNumber function to get a digit 
                     var result = TranslateToNumber(c);
+                    // If the result isn't null then append it to the number
                     if (result != null)
                         newNumber.Append(result);
                     // Bad character?
@@ -33,6 +35,7 @@ namespace Core
                         return null;
                 }
             }
+            // After the number has been made it is sent back as a string
             return newNumber.ToString();
         }
 
@@ -41,15 +44,21 @@ namespace Core
             return keyString.IndexOf(c) >= 0;
         }
 
+        // A read only array is created 
         static readonly string[] digits = {
             "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
         };
 
+
+        // Pass the character into the function
         static int? TranslateToNumber(char c)
         {
+            // Start a loop that checks if the character can be found in the array
             for (int i = 0; i < digits.Length; i++)
             {
+                // i is the part of the array eg 0 "ABC"
                 if (digits[i].Contains(c))
+                    // If found then return the value +2
                     return 2 + i;
             }
             return null;
