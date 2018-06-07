@@ -39,6 +39,7 @@ namespace Core
             return newNumber.ToString();
         }
 
+        // One idea is that this contains change chracter to string
         static bool Contains(this string keyString, char c)
         {
             return keyString.IndexOf(c) >= 0;
@@ -58,7 +59,7 @@ namespace Core
             {
                 // i is the part of the array eg 0 "ABC"
                 if (digits[i].Contains(c))
-                    // If found then return the value +2
+                    // If found then return the value +2 because letters start on key 2
                     return 2 + i;
             }
             return null;
